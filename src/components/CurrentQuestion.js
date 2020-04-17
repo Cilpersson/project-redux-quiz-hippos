@@ -40,7 +40,9 @@ export const CurrentQuestion = () => {
 
   return (
     <QuestionContainer>
-      <Question>Question: {question.questionText}</Question>
+      <Question>
+        {question.id}. {question.questionText}
+      </Question>
       {question.options.map((option, index) => (
         <Option key={index}>
           <OptionInput
@@ -69,7 +71,7 @@ export const CurrentQuestion = () => {
 };
 
 const Question = styled.h1`
-  color: #75a086;
+  color: #a571a0;
   font-size: 36px;
   text-align: center;
 `;
@@ -80,7 +82,7 @@ const OptionInput = styled.input`
   height: 70px;
   min-width: 250px;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #000;
+  border: 0.1em dashed #d59da7;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -88,17 +90,21 @@ const OptionInput = styled.input`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #000;
+  color: #7a5b60;
   text-align: center;
   transition: all 0.2s;
 `;
 
 const QuestionContainer = styled.section`
   width: 550px;
+  height: 650px;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   flex-direction: column;
   margin: auto;
-  background: #ffffff56;
-  border-radius: 0.12em;
+  padding: 15px;
+  background: #ffffff70;
+  border-radius: 0.32em;
+  border: 0.2em dashed #a571a0;
 `;

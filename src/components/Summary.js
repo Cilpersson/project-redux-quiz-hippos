@@ -15,7 +15,7 @@ export const Summary = () => {
   return (
     <EndgameWrapper>
       <Endgame>
-        YAY! You got {correctAnswers.length} /of {totalQuestions.length} points!
+        YAY! You got {correctAnswers.length} / {totalQuestions.length} points!
       </Endgame>
       <RestartButton />
     </EndgameWrapper>
@@ -23,7 +23,7 @@ export const Summary = () => {
 };
 
 const Endgame = styled.h1`
-  color: #75a086;
+  color: #a571a0;
   font-size: 36px;
   text-align: center;
 `;
