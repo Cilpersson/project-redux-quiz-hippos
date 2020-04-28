@@ -1,4 +1,4 @@
-# Project mobile app
+# Project food quiz
 
 ### Mob programming project, creating a quiz using redux.
 
