@@ -17,6 +17,8 @@ export const CurrentQuestion = () => {
     state.quiz.answers.find((a) => a.questionId === question.id)
   );
 
+  console.log(typeof answer);
+
   const handleOnClick = (index) => {
     dispatch(
       quiz.actions.submitAnswer({ questionId: question.id, answerIndex: index })
@@ -46,7 +48,6 @@ export const CurrentQuestion = () => {
       {question.options.map((option, index) => (
         <Option key={index}>
           <OptionInput
-            // om answerIndex har ett värde, kör setClassName
             className={answerIndex === undefined ? "" : setClassName(index)}
             type="button"
             id={index}
@@ -80,9 +81,9 @@ const Option = styled.label``;
 const OptionInput = styled.input`
   display: inline-block;
   height: 70px;
-  min-width: 250px;
+  width: 250px;
   padding: 0.35em 1.2em;
-  border: 0.1em dashed #d59da7;
+  border: 0.1em dashed #d1aa9d;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
@@ -90,7 +91,7 @@ const OptionInput = styled.input`
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  color: #7a5b60;
+  color: #91766d;
   text-align: center;
   transition: all 0.2s;
 `;
