@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #c285a2;
 }
 
 code {
@@ -12,16 +13,21 @@ code {
     monospace;
 }
 
-input {
-  background: #ffffff80;
-  background: #d59da740;
-}
-
 .correctAnswer {
   background: #adccb4;
   border: 0.1em solid #d59da7;
   color: #53835e;
 }
+
+.correctAnswer:active {
+  background: #adccb4;
+  border: 0.1em solid #d59da7;
+  color: #53835e;
+}
 .wrongAnswer {
+  background: #ff7676;
+}
+
+.wrongAnswer:active {
   background: #ff7676;
 }

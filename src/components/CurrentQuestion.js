@@ -94,6 +94,7 @@ const OptionInput = styled.input`
   color: #91766d;
   text-align: center;
   transition: all 0.2s;
+  -webkit-appearance: none;
 `;
 
 const QuestionContainer = styled.section`
