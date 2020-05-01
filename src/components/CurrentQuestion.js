@@ -97,7 +97,6 @@ const OptionInput = styled.input`
 
 const QuestionContainer = styled.section`
   width: 550px;
-  height: 650px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
