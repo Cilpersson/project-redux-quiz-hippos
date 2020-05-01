@@ -14,20 +14,11 @@ code {
 }
 
 .correctAnswer {
-  background: #adccb4;
+  background: #93d1a1;
   border: 0.1em solid #d59da7;
   color: #53835e;
 }
 
-.correctAnswer:active {
-  background: #adccb4;
-  border: 0.1em solid #d59da7;
-  color: #53835e;
-}
 .wrongAnswer {
-  background: #ff7676;
-}
-
-.wrongAnswer:active {
-  background: #ff7676;
+  background: #e96b6b;
 }

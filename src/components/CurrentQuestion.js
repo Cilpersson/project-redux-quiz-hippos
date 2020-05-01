@@ -95,6 +95,8 @@ const OptionInput = styled.input`
   text-align: center;
   transition: all 0.2s;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 `;
 
 const QuestionContainer = styled.section`
